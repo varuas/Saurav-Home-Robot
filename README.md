@@ -13,13 +13,17 @@
 ### Software
 
  - ROS 2
- - Ubuntu on Raspberry Pi 4
+ - Ubuntu 22 on Raspberry Pi 4
  - ROS Arduino Serial Bridge
     - Differential drive controller
     - PID control
     - Encoder driver
     - Motor driver
 
+### Preliminary setups
+
+- Install Ubuntu on WSL2
+- Allow ICMPv4 outbound firewall on windows to allow RP4 to ping WSL
 
 ### Run Commands
 
@@ -30,3 +34,11 @@
     - `r` reset encoder values
     - `o 50 75` Run left & right motor with 50 & 75 speed respectively (max 255)
     - `m 60 86` Run motors with closed loop rpm of 60 and 86
+
+
+### Links & Credits
+
+ROS Arduino Bridge forked from: https://github.com/joshnewans/ros_arduino_bridge
+
+ROS/Arduino Serial Motor demo: https://github.com/joshnewans/serial_motor_demo
+
