@@ -35,6 +35,17 @@
     - `o 50 75` Run left & right motor with 50 & 75 speed respectively (max 255)
     - `m 60 86` Run motors with closed loop rpm of 60 and 86
 
+### Raspberry Pi 4
+
+Test Serial
+
+`tio -b 57600 /dev/ttyACM0`
+
+Run Serial Motor Driver
+ - `ros2 run serial_motor_demo driver --ros-args -p serial_port:=/dev/ttyACM0 -p baud_rate:=57600 -p loop_rate:=30 -p encoder_cpr:=4220`
+
+ Run Serial Motor GUI (on dev machine)
+ `ros2 run serial_motor_demo gui`
 
 ### Links & Credits
 
